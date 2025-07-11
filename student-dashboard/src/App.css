@@ -1,0 +1,37 @@
+/* src/App.css */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.font-sans {
+  font-family: system-ui, sans-serif;
+}
+
+/* Responsive Grid Layout for Students */
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Card Hover Effect */
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Button Focus Styles */
+.focus\:outline-none:focus {
+  outline: none;
+}
